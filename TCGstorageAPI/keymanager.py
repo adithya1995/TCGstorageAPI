@@ -45,14 +45,3 @@ class KeyManager(object):
         cred = self.credentials[auth]
         return cred
 
-    def setKey(self,auth,cred):
-        '''
-        The function to set credential for an authority.
-
-        Parameters:
-            auth - Authority
-            cred - credential
-        '''
-
-        self.credentials[auth]=cred
-        return
