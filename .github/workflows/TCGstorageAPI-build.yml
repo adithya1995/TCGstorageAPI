@@ -39,6 +39,6 @@ jobs:
       - name: Run unit tests
         run: |
           sudo cp -R build/lib.linux-x86_64-3.6 /usr/local/lib/python3.6/site-packages/
-          ls /usr/local/lib/python3.6/site-packages/TCGstorageAPI
+          python3 TCGstorageAPI/test_tcgapi.py
         
         
