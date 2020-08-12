@@ -37,6 +37,8 @@ jobs:
       - name: Build TCGstorageAPI package
         run: python3 setup.py build
       - name: Run unit tests
-        run: python3 TCGstorageAPI/test_tcgapi.py
+        run: |
+          cp -r build/lib.linux-x86_64-3.6/TCGstorageAPI /usr/local/lib/python3.6/site-packages/.
+          python3 TCGstorageAPI/test_tcgapi.py
         
         
