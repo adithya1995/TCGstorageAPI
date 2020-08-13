@@ -39,6 +39,7 @@ jobs:
       - name: Run unit tests
         run: |
           sudo cp -R build/lib.linux-x86_64-3.6 /usr/local/lib/python3.6/site-packages/
+          export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.6/site-packages/
           python3 -c "import sys; print(sys.path)"
           #python3 /usr/local/lib/python3.6/site-packages/TCGstorageAPI/test_tcgapi.py
         
