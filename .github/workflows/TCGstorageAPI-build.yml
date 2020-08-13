@@ -40,7 +40,7 @@ jobs:
         run: |
           sudo cp -R build/lib.linux-x86_64-3.6 /usr/local/lib/python3.6/site-packages/
           export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.6/site-packages/
-          python3 -c "import sys; print(sys.path)"
-          python3 TCGstorageAPI/test_tcgapi.py
+          ls /home/runner/work/TCGstorageAPI/TCGstorageAPI
+          ls /home/runner/work/TCGstorageAPI
         
         
